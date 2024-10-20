@@ -215,20 +215,22 @@ body
 </div>
 <br>
 <body>
-<ul id="nav">
-  <li class="li"><a class="active" href="{% url 'home' %}">Home</a></li>
-  <li class="li"><a href="{% url 'animation' %}">Convertor</a></li>
-  {% if not user.is_authenticated %}
-  <li class="li"><a href="{% url 'signup' %}">Sign Up</a></li>
-  {% endif %}
-  {% if user.is_authenticated %}
-  <li class="li"><a href="{% url 'logout' %}">Log-Out</a></li>
-  {% else %}
-    <li class="li"><a href="{% url 'login' %}">Log-in</a></li>
-  {% endif %}
-  <li class="li"><a href="{% url 'contact' %}">Contact</a></li>
-  <li class="li"><a href="{% url 'about' %}">About</a></li>
-</ul>
+  <ul id="nav">
+    <li class="li"><a class="active" href="{% url 'home' %}">Home</a></li>
+    <li class="li"><a href="{% url 'animation' %}">Convertor</a></li>
+    <li class="li"><a href="{% url 'yt2sign' %}">YT2Sign</a></li>
+    {% if not user.is_authenticated %}
+    <li class="li"><a href="{% url 'signup' %}">Sign Up</a></li>
+    {% endif %}
+    {% if user.is_authenticated %}
+    <li class="li"><a href="{% url 'logout' %}">Log-Out</a></li>
+    {% else %}
+      <li class="li"><a href="{% url 'login' %}">Log-in</a></li>
+    {% endif %}
+    <li class="li"><a href="{% url 'contact' %}">Contact</a></li>
+    <li class="li"><a href="{% url 'about' %}">About</a></li>
+  </ul>
+  
 
 <div class="wrapper" >
   {% block content %}

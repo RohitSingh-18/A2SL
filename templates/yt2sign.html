@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block title %}YouTube to Sign Language{% endblock %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube to Sign Language Transcription</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      input[type="submit"] {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        font-weight: bold;
+        background-color: #feda6a;
+        color: #404040;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #ffffff;
+      }
+      h1{
+        color:#feda6a;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>YouTube Video to Sign Language Transcription</h1>
+      <form action="{% url 'transcribe' %}" method="GET">
+        <label for="video_link">Enter YouTube Video Link:</label>
+        <input
+          type="text"
+          id="video_link"
+          name="video_link"
+          placeholder="https://www.youtube.com/watch?v=VIDEO_ID"
+          required
+        />
+        <input type="submit" value="Transcribe" />
+      </form>
+    </div>
+  </body>
+</html>
+{% endblock %}

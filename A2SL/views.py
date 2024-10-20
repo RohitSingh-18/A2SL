@@ -8,6 +8,7 @@ from nltk.stem import WordNetLemmatizer
 import nltk
 from django.contrib.staticfiles import finders
 from django.contrib.auth.decorators import login_required
+from django.http import JsonResponse
 
 def home_view(request):
 	return render(request,'home.html')
@@ -140,3 +141,21 @@ def login_view(request):
 def logout_view(request):
 	logout(request)
 	return redirect("home")
+
+def yt2sign(request):
+    return render(request, 'yt2sign.html')
+
+
+def transcribe(request):
+    video_link = request.GET.get('video_link')
+    if not video_link:
+        return JsonResponse({'error': 'No video link provided'}, status=400)
+    
+    # Log the video_link value for debugging
+    print(f"Received video link: {video_link}")
+
+    if 'youtube.com/watch' not in video_link:
+        return JsonResponse({'error': 'Invalid YouTube video link'}, status=400)
+
+    # Placeholder response
+    return JsonResponse({'message': 'Transcription started for video link: ' + video_link})

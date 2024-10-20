@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+audio_speech_to_sign_language_converter.egg-info/PKG-INFO
+audio_speech_to_sign_language_converter.egg-info/SOURCES.txt
+audio_speech_to_sign_language_converter.egg-info/dependency_links.txt
+audio_speech_to_sign_language_converter.egg-info/top_level.txt
