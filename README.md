@@ -1,4 +1,4 @@
-# Audio Speech To Sign Language Converter
+#IHearYou (Audio Speech To Sign Language Converter)
 
 A Web Application which takes in live audio speech recording as input, converts it into text and displays the relevant Indian Sign Language animations.
 
@@ -8,7 +8,6 @@ A Web Application which takes in live audio speech recording as input, converts 
 > - A 3D animation of a character created
 >   using Blender 3D tool.
 
-Project Demo Video: https://youtu.be/YiHhD0QGrno
 
 ## Prerequisites
 
