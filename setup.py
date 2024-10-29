@@ -1,7 +1,7 @@
 import setuptools
 
 setuptools.setup(
-    name='I Hear You (An audio-speech-to-sign-language-converter)',
+    name='i_hear_you_audio_speech_to_sign_language_converter',
     version='0.1.0',
     description='HackOdisha4 Project',
     author='Gourav Rout',
