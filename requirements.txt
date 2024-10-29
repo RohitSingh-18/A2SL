@@ -1,5 +1,5 @@
 asgiref==3.8.1
-audio-speech-to-sign-language-converter @ file:///C:/Users/jerry/OneDrive/DESKTOP/Audio-Speech-To-Sign-Language-Converter
+audio-speech-to-sign-language-converter @ file:///C:\Users\jerry\OneDrive\DESKTOP\Audio-Speech-To-Sign-Language-Converter
 certifi==2024.8.30
 charset-normalizer==3.4.0
 click==8.1.7
